@@ -6,7 +6,7 @@ spring:
   datasource:
     username: postgres
     password: postgres
-    url: jdbc:postgresql://localhost:5432/users_db
+    url: jdbc:postgresql://user-postgres:5432/users_db
     driver-class-name: org.postgresql.Driver
   flyway:
     enabled: true
