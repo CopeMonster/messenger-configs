@@ -13,11 +13,7 @@ spring:
     locations: classpath:db/migration
     baseline-on-migrate: true
   config:
-    import: "configserver:"
-  cloud:
-    config:
-      uri: http://config-server:8888
-
+    import: optional:configserver:http://config-server:8888
 eureka:
   client:
     service-url:
