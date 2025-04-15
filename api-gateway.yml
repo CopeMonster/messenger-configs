@@ -5,10 +5,10 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: user-service
-          uri: lb://USER-SERVICE
-          predicates:
-            - Path=/api/v1/users/**
+          - id: user-service
+            uri: lb://USER-SERVICE
+            predicates:
+              - Path=/api/v1/users, /api/v1/users/**
 
 eureka:
   client:
