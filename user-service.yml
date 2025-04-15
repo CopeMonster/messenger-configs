@@ -14,7 +14,8 @@ spring:
     baseline-on-migrate: true
 eureka:
   instance:
-    prefer-ip-address: true
+    hostname: localhost
+    prefer-ip-address: false
   client:
     service-url:
       defaultZone: http://discovery-server:8761/eureka/
