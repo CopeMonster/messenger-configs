@@ -9,6 +9,8 @@ spring:
             uri: lb://USER-SERVICE
             predicates:
               - Path=/api/v1/users, /api/v1/users/**
+      forwarded:
+        enabled: true
 
 eureka:
   client:
